@@ -5,7 +5,7 @@ import "dotenv/config";
 
 
 mongoose
-  .connect("mongodb+srv://imnanilavaraju:imnanilavaraju@chat.q85qs.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=ecommerce")
+  .connect("process.env.DB_CON")
   .then(() => console.log("db connection is success"))
   .catch(() =>
     console.log("db connection is not success some error is occured")
